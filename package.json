@@ -1,0 +1,22 @@
+{
+  "name": "gokaygurcan.github.io",
+  "version": "0.1.0",
+  "description": "Personal website",
+  "homepage": "https://www.gokaygurcan.com/",
+  "scripts": {},
+  "repository": "gokaygurcan/gokaygurcan.github.io",
+  "author": {
+    "name": "Gökay Gürcan",
+    "email": "info@gokaygurcan.com",
+    "url": "https://www.gokaygurcan.com/"
+  },
+  "copyright": "2017",
+  "license": "MIT",
+  "bugs": "https://github.com/gokaygurcan/gokaygurcan.github.io/issues",
+  "keywords": [
+    "personal",
+    "website"
+  ],
+  "dependencies": {},
+  "devDependencies": {}
+}
