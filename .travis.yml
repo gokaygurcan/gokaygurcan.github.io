@@ -1,0 +1,20 @@
+# gokaygurcan/gokaygurcan.github.io
+
+language: node_js
+
+node_js:
+  - '6'
+
+notifications:
+  email: false
+
+before_install:
+  - npm install -g npm
+  - npm install -g xo
+
+before_script:
+  - node --version
+  - npm --version
+
+script: 
+  - npm test
