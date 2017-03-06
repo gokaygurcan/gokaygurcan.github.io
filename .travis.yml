@@ -11,10 +11,13 @@ notifications:
 before_install:
   - npm install -g npm
   - npm install -g xo
+  - npm install -g yarn
+  - npm install -g flow-bin
 
 before_script:
   - node --version
   - npm --version
+  - yarn --version
 
 script: 
   - npm test
