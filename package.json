@@ -5,6 +5,7 @@
   "homepage": "https://www.gokaygurcan.com/",
   "scripts": {
     "start": "babel-node src/server",
+    "dev:start": "nodemon --exec babel-node src",
     "test": "xo && flow && jest --coverage",
     "precommit": "yarn test"
   },
@@ -37,6 +38,7 @@
     "flow-bin": "^0.41.0",
     "husky": "^0.13.2",
     "jest": "^19.0.2",
+    "nodemon": "^1.11.0",
     "xo": "^0.17.1"
   },
   "xo": {
