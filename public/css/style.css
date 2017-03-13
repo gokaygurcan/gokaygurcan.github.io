@@ -1,0 +1,12 @@
+/* gokaygurcan/gokaygurcan.github.io */
+
+body {
+  font-family: Helvetica, sans-serif;
+  margin: auto;
+  width: 960px;
+}
+
+h1 {
+  color: #000;
+  text-align: center;
+}
