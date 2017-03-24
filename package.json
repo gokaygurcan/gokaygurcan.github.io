@@ -5,7 +5,8 @@
   "homepage": "https://www.gokaygurcan.com/",
   "scripts": {
     "start": "babel-node src/server",
-    "dev:start": "nodemon --ignore dist --exec babel-node src/server",
+    "dev:start": "nodemon -e js,jsx --ignore dist --exec babel-node src/server",
+    "dev:wds": "webpack-dev-server --progress --colors",
     "prod:build": "rimraf dist && babel src -d dist --ignore .test.js",
     "prod:start": "yarn prod:build && cross-env NODE_ENV=production sudo pm2 start --name www.gokaygurcan.com -i 0 dist/server && sudo pm2 logs",
     "prod:stop": "sudo pm2 stop www.gokaygurcan.com",
@@ -27,6 +28,7 @@
     "website"
   ],
   "dependencies": {
+    "babel-polyfill": "^6.23.0",
     "body-parser": "^1.17.1",
     "compression": "^1.6.2",
     "cookie-parser": "^1.4.3",
@@ -41,8 +43,10 @@
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",
+    "babel-core": "^6.24.0",
     "babel-eslint": "^7.1.1",
     "babel-jest": "^19.0.0",
+    "babel-loader": "^6.4.1",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-latest": "^6.22.0",
     "cross-env": "^3.2.4",
@@ -54,11 +58,17 @@
     "husky": "^0.13.2",
     "jest": "^19.0.2",
     "nodemon": "^1.11.0",
+    "webpack": "^2.3.1",
+    "webpack-dev-server": "^2.4.2",
     "xo": "^0.17.1"
   },
   "xo": {
     "esnext": true,
     "space": 2,
+    "envs": [
+      "browser",
+      "jest"
+    ],
     "global": [
       "expect",
       "test"

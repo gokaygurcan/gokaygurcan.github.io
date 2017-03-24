@@ -2,6 +2,9 @@
 
 'use strict';
 
+// variables
+const production = process.env.NODE_ENV === 'production';
+
 const renderApp = (title: string) => `
 <!doctype html>
 <html>
@@ -10,7 +13,8 @@ const renderApp = (title: string) => `
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
-    <h1>${title}</h1>
+    <div class="js-app"></div>
+    <script src="${production ? '/static/' : `http://localhost:7000/live`}/js/bundle.js"></script>
   </body>
 </html>`;
 
