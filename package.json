@@ -5,7 +5,11 @@
   "homepage": "https://www.gokaygurcan.com/",
   "scripts": {
     "start": "babel-node src/server",
-    "dev:start": "nodemon --exec babel-node src",
+    "dev:start": "nodemon --ignore dist --exec babel-node src/server",
+    "prod:build": "rimraf dist && babel src -d dist --ignore .test.js",
+    "prod:start": "yarn prod:build && cross-env NODE_ENV=production sudo pm2 start --name www.gokaygurcan.com -i 0 dist/server && sudo pm2 logs",
+    "prod:stop": "sudo pm2 stop www.gokaygurcan.com",
+    "prod:delete": "sudo pm2 delete www.gokaygurcan.com",
     "test": "xo && flow && jest --coverage",
     "precommit": "yarn test"
   },
@@ -30,6 +34,8 @@
     "express-session": "^1.15.1",
     "morgan": "^1.8.1",
     "node-sass-middleware": "^0.11.0",
+    "pm2": "^2.4.2",
+    "rimraf": "^2.6.1",
     "serve-favicon": "^2.4.1",
     "toobusy-js": "^0.5.1"
   },
@@ -39,6 +45,7 @@
     "babel-jest": "^19.0.0",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-latest": "^6.22.0",
+    "cross-env": "^3.2.4",
     "eslint": "^3.17.1",
     "eslint-config-xo": "^0.17.0",
     "eslint-plugin-flowtype": "^2.30.2",

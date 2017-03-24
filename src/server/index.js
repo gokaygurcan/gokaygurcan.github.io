@@ -80,6 +80,7 @@ app.use(session({
   }
 }));
 
+// routes
 app.get('/', (req, res) => {
   res.send(renderApp('Gökay Gürcan'));
 });
