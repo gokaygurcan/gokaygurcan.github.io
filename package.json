@@ -12,8 +12,9 @@
   "scripts": {
     "build": "next build",
     "dev": "next",
+    "heroku-postbuild": "npm run build",
     "precommit": "npm test",
-    "start": "next start",
+    "start": "next start -p $PORT",
     "test": "xo && jest -u --coverage"
   },
   "copyright": "2017",
