@@ -18,5 +18,29 @@
     "website"
   ],
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "xo": "^0.18.1"
+  },
+  "xo": {
+    "esnext": true,
+    "space": 2,
+    "envs": [],
+    "global": [],
+    "rules": {
+      "brace-style": [
+        "error",
+        "stroustrup",
+        {
+          "allowSingleLine": true
+        }
+      ],
+      "camelcase": 0,
+      "capitalized-comments": 0,
+      "new-cap": 0
+    },
+    "ignore": [],
+    "overrides": [],
+    "extends": [],
+    "plugins": []
+  }
 }
