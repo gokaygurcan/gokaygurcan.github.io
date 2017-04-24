@@ -15,8 +15,13 @@ const Layout = ({children, title}) => (
       <title>{ title }</title>
 
       <meta charSet="utf-8" />
-      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui, shrink-to-fit=no" />
+      <meta httpEquiv="x-dns-prefetch-control" content="on" />
+      <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
+      <meta httpEquiv="cleartype" content="on" />
+
+      <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
     </Head>
 
     <header>
@@ -27,10 +32,6 @@ const Layout = ({children, title}) => (
         &nbsp; -- &nbsp;
         <Link href="/projects">
           <a>Projects</a>
-        </Link>
-        &nbsp; -- &nbsp;
-        <Link href="/projects?id=sample" as="/projects/sample">
-          <a>Project details</a>
         </Link>
       </nav>
     </header>

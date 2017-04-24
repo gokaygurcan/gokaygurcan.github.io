@@ -1,5 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Snapshot Testing Print "Dummy Project" 1`] = `
+<div
+  className="wrapper"
+  data-jsx={1407449589}
+>
+  <header
+    data-jsx={1407449589}
+  >
+    <nav
+      data-jsx={1407449589}
+    >
+      <a
+        data-jsx={1407449589}
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+        --  
+      <a
+        data-jsx={1407449589}
+        href="/projects"
+        onClick={[Function]}
+      >
+        Projects
+      </a>
+    </nav>
+  </header>
+  <span>
+    Dummy Project
+  </span>
+  <footer
+    data-jsx={1407449589}
+  >
+    MIT © Gökay Gürcan
+  </footer>
+</div>
+`;
+
 exports[`Snapshot Testing Print "Projects page" 1`] = `
 <div
   className="wrapper"
@@ -26,21 +65,31 @@ exports[`Snapshot Testing Print "Projects page" 1`] = `
       >
         Projects
       </a>
-        --  
-      <a
-        data-jsx={1407449589}
-        href="/projects/sample"
-        onClick={[Function]}
-      >
-        Project details
-      </a>
     </nav>
   </header>
-  <div>
-    <span>
+  <div
+    data-jsx={661177286}
+  >
+    <span
+      data-jsx={661177286}
+    >
       Projects page
     </span>
-    <pre />
+    <ul
+      data-jsx={661177286}
+    >
+      <li
+        data-jsx={661177286}
+      >
+        <a
+          data-jsx={661177286}
+          href="/projects/dummy"
+          onClick={[Function]}
+        >
+          dummy
+        </a>
+      </li>
+    </ul>
   </div>
   <footer
     data-jsx={1407449589}

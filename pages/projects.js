@@ -4,34 +4,34 @@
 // MIT © Gökay Gürcan
 
 // node modules
-import {PropTypes} from 'prop-types';
+import Link from 'next/link';
 import React from 'react';
 
 // local modules
 import Layout from '../components/layout';
 
-const Projects = ({query}) => (
+const Projects = () => (
   <Layout>
     <div>
       <span>Projects page</span>
 
-      <pre>{ query.id }</pre>
+      <ul>
+        <li>
+          <Link href="/projects/dummy">
+            <a>dummy</a>
+          </Link>
+        </li>
+      </ul>
+
+      <style jsx>{`
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+    `}</style>
     </div>
   </Layout>
 );
-
-Projects.getInitialProps = ({query}) => {
-  return {
-    query
-  };
-};
-
-Projects.propTypes = {
-  query: PropTypes.object
-};
-
-Projects.defaultProps = {
-  query: {}
-};
 
 export default Projects;

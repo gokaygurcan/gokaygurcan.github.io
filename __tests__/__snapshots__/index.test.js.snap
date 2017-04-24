@@ -26,14 +26,6 @@ exports[`Snapshot Testing Print "gokaygurcan.github.io" 1`] = `
       >
         Projects
       </a>
-        --  
-      <a
-        data-jsx={1407449589}
-        href="/projects/sample"
-        onClick={[Function]}
-      >
-        Project details
-      </a>
     </nav>
   </header>
   <span>

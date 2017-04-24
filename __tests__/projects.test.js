@@ -10,6 +10,7 @@ import renderer from 'react-test-renderer';
 
 // local modules
 import Projects from '../pages/projects';
+import DummyProject from '../pages/projects/dummy';
 
 describe('Enzyme', () => {
   it('Print "Projects page"', () => {
@@ -20,24 +21,25 @@ describe('Enzyme', () => {
     expect(projects.find('span').text().trim()).toEqual('Projects page');
   });
 
-  it('Print "sample" project', () => {
-    const props = {
-      query: {
-        id: 'sample'
-      }
-    };
-
-    const projects = shallow(
-      <Projects {...props} />
+  it('Print "Dummy Project"', () => {
+    const dummyProjects = shallow(
+      <DummyProject />
     );
 
-    expect(projects.find('pre').text().trim()).toEqual('sample');
+    expect(dummyProjects.find('span').text().trim()).toEqual('Dummy Project');
   });
 });
 
 describe('Snapshot Testing', () => {
   it('Print "Projects page"', () => {
     const component = renderer.create(<Projects />);
+    const tree = component.toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+
+  it('Print "Dummy Project"', () => {
+    const component = renderer.create(<DummyProject />);
     const tree = component.toJSON();
 
     expect(tree).toMatchSnapshot();
