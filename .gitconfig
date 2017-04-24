@@ -1,4 +1,14 @@
-# gokaygurcan/gokaygurcan.github.io
+# gokaygurcan.github.io
+#
+# https://www.gokaygurcan.com/
+# MIT © Gökay Gürcan
+
+[alias]
+  pull = fetch && git pull
+
+[apply]
+  ignorewhitespace = change
+  whitespace = nowarn
 
 [branch "develop"]
   remote = origin
@@ -11,8 +21,12 @@
 [color]
   ui = auto
 
+[commit]
+  gpgsign = true
+
 [core]
   autocrlf = input
+  longpaths = true
 
 [fetch]
   prune = true
@@ -28,6 +42,12 @@
   support = support/
   versiontag = v
 
+[http]
+  postBuffer = 1048576000
+
+[log]
+  date = iso
+
 [merge]
   ff = only
 
@@ -37,6 +57,8 @@
 [rebase]
   autosquash = true
 
-[remote "origin"]  
-  url = git@github.com:gokaygurcan/gokaygurcan.github.io.git
-  fetch = +refs/heads/*:refs/remotes/origin/*
+[rerere]
+  enabled = true
+
+[status]
+  showUntrackedFiles = no
