@@ -6,19 +6,13 @@
 // node modules
 import React from 'react';
 
-const Index = () => (
-  <div className="wrapper">
-    <span>gokaygurcan.github.io</span>
+// local modules
+import Layout from '../components/layout';
 
-    <style jsx>{`
-      .wrapper {
-        position: absolute;
-        text-align: center;
-        top: 50%;
-        width: 100%;
-      }
-    `}</style>
-  </div>
+const Index = () => (
+  <Layout>
+    <span>gokaygurcan.github.io</span>
+  </Layout>
 );
 
 export default Index;

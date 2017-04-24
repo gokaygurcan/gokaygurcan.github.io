@@ -11,9 +11,9 @@
   },
   "scripts": {
     "build": "next build",
-    "dev": "next",
+    "dev": "node index.js",
     "precommit": "npm test",
-    "start": "next start",
+    "start": "NODE_ENV=production node index.js",
     "test": "xo && jest -u --coverage"
   },
   "copyright": "2017",
@@ -25,6 +25,8 @@
   ],
   "dependencies": {
     "next": "^2.2.0",
+    "path-match": "^1.2.4",
+    "prop-types": "^15.5.8",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },

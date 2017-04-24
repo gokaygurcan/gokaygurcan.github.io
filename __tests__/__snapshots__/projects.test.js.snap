@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Snapshot Testing Print "gokaygurcan.github.io" 1`] = `
+exports[`Snapshot Testing Print "Projects page" 1`] = `
 <div
   className="wrapper"
   data-jsx={1407449589}
@@ -36,9 +36,12 @@ exports[`Snapshot Testing Print "gokaygurcan.github.io" 1`] = `
       </a>
     </nav>
   </header>
-  <span>
-    gokaygurcan.github.io
-  </span>
+  <div>
+    <span>
+      Projects page
+    </span>
+    <pre />
+  </div>
   <footer
     data-jsx={1407449589}
   >
