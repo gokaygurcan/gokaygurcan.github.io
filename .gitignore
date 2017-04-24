@@ -123,3 +123,6 @@ output/
 
 ## selenium ------------
 selenium-server-standalone-*
+
+## next.js -------------
+.next

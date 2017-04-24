@@ -9,7 +9,12 @@
     "email": "info@gokaygurcan.com",
     "url": "https://www.gokaygurcan.com/"
   },
-  "scripts": {},
+  "scripts": {
+    "build": "next build",
+    "dev": "next",
+    "start": "next start",
+    "test": "xo"
+  },
   "copyright": "2017",
   "license": "MIT",
   "bugs": "https://github.com/gokaygurcan/gokaygurcan.github.io/issues",
@@ -17,7 +22,11 @@
     "personal",
     "website"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "next": "^2.2.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
   "devDependencies": {
     "xo": "^0.18.1"
   },
