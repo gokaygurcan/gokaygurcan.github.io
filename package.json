@@ -12,6 +12,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next",
+    "precommit": "npm test",
     "start": "next start",
     "test": "xo && jest -u --coverage"
   },
@@ -33,6 +34,7 @@
     "enzyme": "^2.8.2",
     "eslint-config-xo-react": "^0.11.1",
     "eslint-plugin-react": "^6.10.3",
+    "husky": "^0.13.3",
     "jest-cli": "^19.0.2",
     "react-addons-test-utils": "^15.5.1",
     "react-test-renderer": "^15.5.4",
