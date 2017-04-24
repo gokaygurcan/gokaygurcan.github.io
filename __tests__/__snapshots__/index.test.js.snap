@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot Testing Print "gokaygurcan.github.io" 1`] = `
+<div
+  className="wrapper"
+  data-jsx={1407449589}
+>
+  <span
+    data-jsx={1407449589}
+  >
+    gokaygurcan.github.io
+  </span>
+</div>
+`;
